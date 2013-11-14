@@ -1,1 +1,1 @@
-require "middleman-pry"
+require 'middleman-pry'

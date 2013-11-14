@@ -1,24 +1,20 @@
 # -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
+$:.push File.expand_path('../lib', __FILE__)
 
-Gem::Specification.new do |s|
-  s.name        = "middleman-pry"
-  s.version     = "0.0.1"
-  s.platform    = Gem::Platform::RUBY
-  # s.authors     = ["Your Name"]
-  # s.email       = ["email@example.com"]
-  # s.homepage    = "http://example.com"
-  # s.summary     = %q{A short summary of your extension}
-  # s.description = %q{A longer description of your extension}
+Gem::Specification.new do |gem|
+  gem.name     = 'middleman-pry'
+  gem.version  = '0.0.1'
+  gem.platform = Gem::Platform::RUBY
+  gem.license  = 'MIT'
+  gem.authors  = ['Andrew Kvalheim']
+  gem.email    = ['Andrew@Kvalhe.im']
+  gem.homepage = 'https://github.com/AndrewKvalheim/middleman-pry'
+  gem.summary  = %q{Use Pry as the Middleman console.}
 
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  s.require_paths = ["lib"]
-  
-  # The version of middleman-core your extension depends on
-  s.add_runtime_dependency("middleman-core", [">= 3.2.0"])
-  
-  # Additional dependencies
-  # s.add_runtime_dependency("gem-name", "gem-version")
+  gem.files         = `git ls-files -z`.split("\0")
+  gem.test_files    = gem.files.grep(%r{^(features|fixtures)/})
+  gem.require_paths = ['lib']
+
+  gem.add_runtime_dependency 'middleman-core', '>= 3.2.0'
+  gem.add_runtime_dependency 'pry', '>= 0.9.12'
 end
