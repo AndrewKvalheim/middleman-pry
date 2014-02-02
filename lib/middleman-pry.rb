@@ -16,7 +16,7 @@ class Middleman::Cli::Console
         set :environment, instance_options[:environment].to_sym
       end
 
-      logger(instance_options[:verbose] ? 0 : 1, false)
+      ::Middleman::Logger.singleton(instance_options[:verbose] ? 0 : 1, false)
     end
 
     @instance.pry
