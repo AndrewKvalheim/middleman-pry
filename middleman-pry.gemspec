@@ -3,7 +3,7 @@ $:.push File.expand_path('../lib', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name     = 'middleman-pry'
-  gem.version  = '0.0.2'
+  gem.version  = '0.0.3'
   gem.platform = Gem::Platform::RUBY
   gem.license  = 'MIT'
   gem.authors  = ['Andrew Kvalheim']
