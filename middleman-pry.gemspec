@@ -5,6 +5,7 @@ Gem::Specification.new do |gem|
   gem.name     = 'middleman-pry'
   gem.version  = '0.0.3'
   gem.platform = Gem::Platform::RUBY
+  gem.required_ruby_version = '~> 2.0'
   gem.license  = 'MIT'
   gem.authors  = ['Andrew Kvalheim']
   gem.email    = ['Andrew@Kvalhe.im']
