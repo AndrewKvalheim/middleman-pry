@@ -1,5 +1,7 @@
 # middleman-pry
 
+[![Build Status][build-status-badge]][build-status]
+
 Replaces [Middleman's][middleman] built-in console with [Pry][], à la
 [pry-rails][].
 
@@ -99,7 +101,8 @@ locals: _  __  _dir_  _ex_  _file_  _in_  _out_  _pry_  resource
 $
 ```
 
-
+  [build-status]: https://travis-ci.org/AndrewKvalheim/middleman-pry
+  [build-status-badge]: https://travis-ci.org/AndrewKvalheim/middleman-pry.png?branch=master
   [middleman]: http://middlemanapp.com/
   [pry]: http://pryrepl.org/
   [pry-rails]: https://github.com/rweng/pry-rails
