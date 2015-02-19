@@ -20,38 +20,35 @@ and run `bundle install`.
 
 Start the Middleman console like normal:
 
-```shell
+```console
 $ middleman console
 ```
 
 You should find yourself in an interactive Pry session in the context of your
 Middleman app:
 
-```
-#<Middleman::Application::MiddlemanApplication1>$ cd sitemap.resources.first
-#<Middleman::Sitemap::Resource>$ ls
-Middleman::Sitemap::Extensions::Traversal#methods:
-  children          eponymous_directory?      parent
-  directory_index?  eponymous_directory_path  siblings
-Middleman::Sitemap::Extensions::Proxies::ResourceInstanceMethods#methods:
-  get_source_file  proxied_to  proxied_to_resource  proxy?  proxy_to
-Middleman::CoreExtensions::FrontMatter::ResourceInstanceMethods#methods:
-  content_type  data  ignored?  raw_data
+```console
+ruby-2.2.0:MiddlemanApplication1$ cd sitemap.resources.first
+ruby-2.2.0:Resource (1)$ ls
 Middleman::Sitemap::Resource#methods:
-  add_metadata      destination_path=  metadata      source_file
-  app               ext                path          store
-  binary?           instrument         render        template?
-  destination_path  logger             request_path  url
-instance variables:
-  @app  @destination_path  @local_metadata  @path  @source_file  @store
-#<Middleman::Sitemap::Resource>$
+  add_metadata     blog_controller=   instrument  request_path  url
+  app              destination_path   logger      source_file
+  binary?          destination_path=  metadata    store
+  blog_controller  ext                path        template?
+Middleman::Blog::BlogArticle#methods:
+  blog_data     default_summary_generator  previous_article  summary
+  blog_options  inspect                    published?        tags
+  body          lang                       render            title
+  date          next_article               slug
+ruby-2.2.0:Resource (1)$ url
+=> "/use-pry-as-the-middleman-console/"
 ```
 
 
   [build-status]: https://travis-ci.org/AndrewKvalheim/middleman-pry
-  [build-status-badge]: https://travis-ci.org/AndrewKvalheim/middleman-pry.png?branch=master
+  [build-status-badge]: https://travis-ci.org/AndrewKvalheim/middleman-pry.svg?branch=master
   [gem-version]: https://badge.fury.io/rb/middleman-pry
-  [gem-version-badge]: https://badge.fury.io/rb/middleman-pry.png
+  [gem-version-badge]: https://badge.fury.io/rb/middleman-pry.svg
   [middleman]: http://middlemanapp.com/
   [pry]: http://pryrepl.org/
   [pry-rails]: https://github.com/rweng/pry-rails
