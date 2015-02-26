@@ -8,13 +8,25 @@ Replaces [Middleman's][middleman] built-in console with [Pry][], à la
 
 ## Installation
 
-Add to your `Gemfile`:
+Install the gem:
 
 ```ruby
+# Gemfile
+
 gem 'middleman-pry'
 ```
 
-and run `bundle install`.
+```console
+$ bundle install
+```
+
+and activate the extension:
+
+```ruby
+# config.rb
+
+activate :pry
+```
 
 ## Usage
 
