@@ -1,8 +1,11 @@
-# Ignore bundler lock file
-/Gemfile.lock
-
-# Ignore pkg folder
-/pkg
+# Appraisal
+/gemfiles/*.gemfile.lock
 
 # Aruba
 /tmp
+
+# Bundler
+/Gemfile.lock
+
+# RubyGems
+/pkg

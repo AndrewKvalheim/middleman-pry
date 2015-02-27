@@ -1,6 +1,13 @@
-env:
-  - CUCUMBER_FORMAT=pretty
+gemfile:
+  - gemfiles/v3.gemfile
+  - gemfiles/v3_github.gemfile
+  - gemfiles/v4.gemfile
+  - gemfiles/v4_github.gemfile
 language: ruby
+matrix:
+  allow_failures:
+    - gemfile: gemfiles/v3_github.gemfile
+    - gemfile: gemfiles/v4_github.gemfile
 rvm:
   - 2.0.0
   - 2.2.0

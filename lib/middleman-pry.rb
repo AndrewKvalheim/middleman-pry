@@ -1,3 +1,7 @@
-require 'middleman-pry/extension'
+require 'middleman-core'
 
-Middleman::Pry::Extension.register :pry
+::Middleman::Extensions.register :pry do
+  require 'middleman-pry/extension'
+
+  Middleman::Pry::Extension
+end

@@ -22,6 +22,13 @@ Gem::Specification.new do |gem|
   # Dependencies
   gem.platform              = Gem::Platform::RUBY
   gem.required_ruby_version = '~> 2.0'
-  gem.add_runtime_dependency 'middleman-core', '~> 3.2'
+  gem.add_runtime_dependency 'middleman', '>= 3.2.0.a', '< 5'
   gem.add_runtime_dependency 'pry', '~> 0.9'
+
+  # Development dependencies
+  gem.add_development_dependency 'rake'
+  gem.add_development_dependency 'rdoc'
+  gem.add_development_dependency 'travis'
+  gem.add_development_dependency 'websocket-native'
+  gem.add_development_dependency 'yard'
 end
