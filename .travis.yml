@@ -1,14 +1,17 @@
 gemfile:
-  - gemfiles/v3.gemfile
-  - gemfiles/v3_github.gemfile
-  - gemfiles/v4.gemfile
-  - gemfiles/v4_github.gemfile
+  - gemfiles/middleman_3.3.gemfile
+  - gemfiles/middleman_3.4.gemfile
+  - gemfiles/middleman_3_unreleased.gemfile
+  - gemfiles/middleman_4.0.gemfile
+  - gemfiles/middleman_4.1.gemfile
+  - gemfiles/middleman_4_unreleased.gemfile
 language: ruby
 matrix:
   allow_failures:
-    - gemfile: gemfiles/v3_github.gemfile
-    - gemfile: gemfiles/v4_github.gemfile
+    - gemfile: gemfiles/middleman_3_unreleased.gemfile
+    - gemfile: gemfiles/middleman_4_unreleased.gemfile
 rvm:
-  - 2.0.0
-  - 2.2.0
+  - 2.1.8
+  - 2.2.4
+  - 2.3.0
 script: bundle exec rake test
