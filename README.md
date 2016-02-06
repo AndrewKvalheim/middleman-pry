@@ -40,8 +40,8 @@ You should find yourself in an interactive Pry session in the context of your
 Middleman app:
 
 ```console
-ruby-2.2.0:MiddlemanApplication1$ cd sitemap.resources.first
-ruby-2.2.0:Resource (1)$ ls
+middleman:~$ cd sitemap.resources.first
+middleman:Middleman::Sitemap::Resource$ ls
 Middleman::Sitemap::Resource#methods:
   add_metadata     blog_controller=   instrument  request_path  url
   app              destination_path   logger      source_file
@@ -52,7 +52,7 @@ Middleman::Blog::BlogArticle#methods:
   blog_options  inspect                    published?        tags
   body          lang                       render            title
   date          next_article               slug
-ruby-2.2.0:Resource (1)$ url
+middleman:Middleman::Sitemap::Resource$ url
 => "/use-pry-as-the-middleman-console/"
 ```
 
