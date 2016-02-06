@@ -1,9 +1,11 @@
 $LOAD_PATH.push File.expand_path('../lib', __FILE__)
 
+require 'middleman-pry/version'
+
 Gem::Specification.new do |gem|
   # Identity
   gem.name     = 'middleman-pry'
-  gem.version  = '0.0.4'
+  gem.version  = Middleman::Pry::VERSION
   gem.summary  = 'Use Pry as the Middleman console.'
   gem.homepage = 'https://github.com/AndrewKvalheim/middleman-pry'
 
