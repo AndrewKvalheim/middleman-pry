@@ -3,6 +3,7 @@ gemfile:
   - gemfiles/middleman_3.4.gemfile
   - gemfiles/middleman_3_unreleased.gemfile
   - gemfiles/middleman_4.0.gemfile
+  - gemfiles/middleman_4.1.2.gemfile
   - gemfiles/middleman_4.1.gemfile
   - gemfiles/middleman_4_unreleased.gemfile
 language: ruby
