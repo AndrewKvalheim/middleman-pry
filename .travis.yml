@@ -11,10 +11,15 @@ matrix:
   allow_failures:
     - gemfile: gemfiles/middleman_3_unreleased.gemfile
     - gemfile: gemfiles/middleman_4_unreleased.gemfile
+  exclude:
+    - rvm: 2.1.10
+      gemfile: gemfiles/middleman_4.1.gemfile
+    - rvm: 2.1.10
+      gemfile: gemfiles/middleman_4_unreleased.gemfile
 rvm:
-  - 2.1.8
-  - 2.2.4
-  - 2.3.0
+  - 2.1.10
+  - 2.2.6
+  - 2.3.3
 before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y libgmp3-dev
