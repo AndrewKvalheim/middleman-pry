@@ -2,17 +2,14 @@
 
 source "https://rubygems.org"
 
-gem "middleman", :github => "middleman/middleman", :branch => "master"
+gem "middleman", github: "middleman/middleman", branch: "master"
 
 group :test do
   gem "appraisal", "~> 2.0"
   gem "aruba", "~> 0.13"
+  gem "capybara"
   gem "cucumber", "~> 2.0"
   gem "rspec", "~> 3.2"
 end
 
-platforms :ruby_21 do
-  gem "listen", "< 3.1"
-end
-
-gemspec :path => "../"
+gemspec path: "../"
